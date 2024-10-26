@@ -3,14 +3,7 @@
 import { useState } from 'react';
 import ProductCard from '../ProductCard';
 import { debounce } from '@/utils/debounce';
-
-type Product = {
-  id: number;
-  title: string;
-  description: string;
-  price: number;
-  image: string;
-};
+import { Product } from '@/models';
 
 export default function ProductList({ products }: { products: Product[] }) {
   const [filteredProducts, setFilteredProducts] = useState<Product[]>(products);

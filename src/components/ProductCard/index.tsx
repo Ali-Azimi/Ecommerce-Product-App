@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import Link from 'next/link';
-import { Product } from './models';
+import { Product } from '../../models';
 import Image from 'next/image';
 
 const ProductCard: FC<{ product: Product }> = ({ product }) => {
